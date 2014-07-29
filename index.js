@@ -22,7 +22,7 @@ module.exports = {
 			});
 
 			executer.stderr.on("data", function(data) {
-				process.stdout.write(data);
+				process.stderr.write(data);
 			});
 
 			executer.on("exit", function(code) {
